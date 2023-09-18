@@ -6,8 +6,12 @@ using System.Windows.Forms;
 
 namespace NSCAD
 {
+
+
     static class Program
     {
+        public static int TracePaint = 1; //線色
+
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
@@ -16,7 +20,7 @@ namespace NSCAD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainWin());
         }
     }
 }
